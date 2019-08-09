@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalTestA.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +9,8 @@ namespace FinalTestA
 {
     static class Program
     {
+        public static HeroGenerator heroGenerator;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +19,10 @@ namespace FinalTestA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            heroGenerator = new HeroGenerator();
+
+            Application.Run(heroGenerator);
         }
     }
 }
