@@ -24,7 +24,7 @@ namespace FinalTestA.Objects
         private string m_popularity;
 
         //Identity
-        public string Name { get; set; }
+        public string HeroName { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
@@ -137,14 +137,35 @@ namespace FinalTestA.Objects
         public int Karma { get; set; }
 
         //Power list
-        List<Power> Powers;
+        public List<Power> Powers;
 
-        Hero()
+        public Hero()
         {
             //Instantiate an empty Power List
             Powers = new List<Power>();
-
         }
 
+        //TODO
+        public static Hero Parse(string stringToParse)
+        {
+            string[] values = stringToParse.Split('\t');
+            Hero result = new Hero();
+
+            result.Fighting     = values[0];
+            result.Agility      = values[1];
+            result.Strength     = values[2];
+            result.Endurance    = values[3];
+
+            result.Reason       = values[4];
+            result.Intuition    = values[5];
+            result.Psyche       = values[6];
+            result.Popularity   = values[7];
+
+            result.HeroName         = values[8];
+            result.FirstName    = values[9];
+            result.LastName     = values[10];
+
+            return result;
+        }
     }
 }

@@ -17,5 +17,22 @@ namespace FinalTestA.Objects
         //Public Properties
         public string Name { get; set; }
         public int Number { get; set; }
+
+        public Power(string name, int number)
+        {
+            Name = name;
+            Number = number;
+        }
+
+        public Power()
+        {
+        }
+
+        public static Power Parse(string stringToParse)
+        {
+            string[] values = stringToParse.Split('\t');
+            Power result = new Power(values[0], Convert.ToInt32(values[1]));
+            return result;
+        }
     }
 }

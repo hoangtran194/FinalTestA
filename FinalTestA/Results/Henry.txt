@@ -1,0 +1,1 @@
+[{"Powers":[{"Name":"Power Boost","Number":1},{"Name":"Energy Blast","Number":2},{"Name":"Water Freedom","Number":3},{"Name":"Teleportation","Number":4}],"HeroName":"Juan Scharmann","FirstName":"Juan","LastName":"Scharmann","Fighting":"10","Strength":"29","Agility":"45","Endurance":"47","Reason":"28","Intuition":"34","Psyche":"27","Popularity":"23","Health":131,"Karma":112}]
